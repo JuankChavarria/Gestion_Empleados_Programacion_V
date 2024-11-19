@@ -13,10 +13,14 @@ namespace Proyecto_Progra_V_.Models
         public string Diagnostico { get; set; }
         public string Tratamiento { get; set; }
         public string Observaciones { get; set; }
+        public string AdicionadoPor { get; set; }
+        public DateTime FechaAdicion { get; set; } = DateTime.Now;
+        public string ModificadoPor { get; set; }
+        public DateTime? FechaModificacion { get; set; } = DateTime.Now;
 
         public Historial() { }
 
-        public Historial(int idHistorial, int idPaciente, DateTime fecha, string diagnostico, string tratamiento, string observaciones)
+        public Historial(int idHistorial, int idPaciente, DateTime fecha, string diagnostico, string tratamiento, string observaciones, string adicionadoPor, DateTime fechaAdicion, string modificadoPor, DateTime? fechaModificacion)
         {
             IdHistorial = idHistorial;
             IdPaciente = idPaciente;
@@ -24,6 +28,10 @@ namespace Proyecto_Progra_V_.Models
             Diagnostico = diagnostico;
             Tratamiento = tratamiento;
             Observaciones = observaciones;
+            AdicionadoPor = adicionadoPor;
+            FechaAdicion = fechaAdicion;
+            ModificadoPor = modificadoPor;
+            FechaModificacion = fechaModificacion;
         }
     }
     

@@ -13,11 +13,16 @@ namespace Proyecto_Progra_V_.Models
         public DateTime FechaReceta { get; set; }
         public string NombreMedicamento { get; set; }
         public string Dosis { get; set; }
+        public string AdicionadoPor { get; set; }
+        public DateTime FechaAdicion { get; set; } = DateTime.Now;
+        public string ModificadoPor { get; set; }
+        public DateTime? FechaModificacion { get; set; } = DateTime.Now;
+
 
 
         public Receta() { }
 
-        public Receta(int idReceta, int idPciente, int idEmpleado, DateTime fechaReceta, string nombreMedicamento, string dosis)
+        public Receta(int idReceta, int idPciente, int idEmpleado, DateTime fechaReceta, string nombreMedicamento, string dosis, string adicionadoPor, DateTime fechaAdicion, string modificadoPor, DateTime? fechaModificacion)
         {
             IdReceta = idReceta;
             IdPciente = idPciente;
@@ -25,6 +30,10 @@ namespace Proyecto_Progra_V_.Models
             FechaReceta = fechaReceta;
             NombreMedicamento = nombreMedicamento;
             Dosis = dosis;
+            AdicionadoPor = adicionadoPor;
+            FechaAdicion = fechaAdicion;
+            ModificadoPor = modificadoPor;
+            FechaModificacion = fechaModificacion;
         }
     }
 }
