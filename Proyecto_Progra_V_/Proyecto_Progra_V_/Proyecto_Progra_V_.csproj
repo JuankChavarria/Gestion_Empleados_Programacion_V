@@ -215,7 +215,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cita.cs" />
+    <Compile Include="Models\Departamento.cs" />
     <Compile Include="Models\Empleado.cs" />
+    <Compile Include="Models\Facturacion.cs" />
+    <Compile Include="Models\Historial.cs" />
+    <Compile Include="Models\Paciente.cs" />
+    <Compile Include="Models\Receta.cs" />
     <Compile Include="Pages\CrearEmpleado.aspx.cs">
       <DependentUpon>CrearEmpleado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
