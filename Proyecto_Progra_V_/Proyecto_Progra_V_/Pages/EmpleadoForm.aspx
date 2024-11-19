@@ -15,8 +15,8 @@
         <form id="estudianteForm" runat="server" method="post" action="PersonaForm.aspx">
             <h2>Formulario Empleado</h2>
             <label>Identificacion: </label>
-            <input type="number" id="identificacion" name="identificacion" class="input" required /><br />
-            <label>Nombre:</label>
+            <input type="number" id="idEmpleado" name="idEmpleado" class="input" required /><br />
+            <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" class="input" required /><br />
             <label>Apellido:</label>
             <input type="text" id="apellidos" name="apellidos" class="input" required /><br />
